@@ -1,0 +1,22 @@
+jetpipe.c is copyright 2012 Eric Belanger <bilange@hotmail.com>
+Original jetpipe (https://code.launchpad.net/~ogra/ltsp/feisty-ltsp-jetpipe)
+is copyright 2006, Oliver Grawert <orga@ubuntu.com>, Canonical Ltd.
+
+This file ports the jetpipe.py script from the LTSP project to the C 
+programming language.
+
+This port has been created in order to get rid of the Python dependency (>20Mb)
+in my static, non-LTSP ultra lightweight thin client solution. It is however a 
+bit more verbose than the original python script for diagnostic purposes.
+
+Although this port is complete feature-wise compared to jetpipe.py, I do not
+affirm that it has no known or otherwise bugs. Go easy, this is my 
+baby footsteps in C :-)
+
+Usage: 
+./jetpipe <device> <port>
+
+Where <device> is usually a lp port located in /dev/lp*
+      <port> is a TCP port, usually 9100.
+
+To compile: gcc -o jetpipe jetpipe.c
