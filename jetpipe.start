@@ -1,0 +1,4 @@
+#!/bin/sh
+
+echo -e "Starting JetPipe..."
+/usr/bin/python2.7 /usr/sbin/jetpipe /dev/usb/lp0 9100
